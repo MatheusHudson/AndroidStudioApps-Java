@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/numerosFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1D1A7"
+    tools:context=".Fragments.NumerosFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E1D1A7">
+
+        <ImageView
+            android:id="@+id/imageUm"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/um"
+            app:layout_constraintEnd_toStartOf="@+id/imageDois"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/um" />
+
+        <ImageView
+            android:id="@+id/imageDois"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dois"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageUm"
+            app:layout_constraintTop_toTopOf="@+id/imageUm" />
+
+        <ImageView
+            android:id="@+id/imageTres"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="32dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tres"
+            app:layout_constraintEnd_toStartOf="@+id/imageQuatro"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageUm" />
+
+        <ImageView
+            android:id="@+id/imageQuatro"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/quatro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageTres"
+            app:layout_constraintTop_toTopOf="@+id/imageTres" />
+
+        <ImageView
+            android:id="@+id/imageCinco"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="32dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cinco"
+            app:layout_constraintEnd_toStartOf="@+id/imageSeis"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageTres" />
+
+        <ImageView
+            android:id="@+id/imageSeis"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/seis"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageCinco"
+            app:layout_constraintTop_toTopOf="@+id/imageCinco" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
